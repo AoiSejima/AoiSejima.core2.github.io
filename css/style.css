@@ -1,0 +1,62 @@
+body {
+    margin: 0 auto;
+    font-family: Fino, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#lightpink-circle {
+    position: absolute;
+    background: #F1DADA;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    left: -3rem;
+    top: 2rem;
+}
+
+h1 {
+    position: relative;
+    color: black;
+    font-size: 10rem;
+    line-height: 10rem;
+    left: 10rem;
+}
+
+h2 {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    z-index: 2;
+}
+
+h2:hover {
+    text-shadow: 1px 1px 15px white;
+}
+
+ul {
+    list-style: none;
+    margin-left: 60rem;
+    margin-top: 15rem;
+    z-index: 2;
+}
+
+li {
+    padding-bottom: 5rem;
+}
+
+svg {
+    position: absolute;
+    margin-top: -12rem;
+    z-index: 1;
+}
+
+path {
+    /* fill: transparent; */
+}
+
+textpath {
+    font-size: -4rem;
+}

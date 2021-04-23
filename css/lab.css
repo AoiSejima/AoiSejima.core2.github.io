@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book';
+    src: url('../assets/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdBk.woff') format('woff');
+}
+
+body {
+    margin: 0 auto;
+    font-family: Fino, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#lightpink-circle {
+    position: absolute;
+    background: #F1DADA;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    left: -3rem;
+    top: -15rem;
+    z-index: 1;
+}
+
+h1 {
+    position: relative;
+    color: black;
+    font-size: 6rem;
+    left: 3rem;
+    top: -2rem;
+    z-index: 2;
+}
+
+h1:hover {
+    text-shadow: 1px 1px 15px black;
+}
+
+h4 {
+    position: relative;
+    color: black;
+    font-size: 3rem;
+    left: 86rem;
+    top: -12rem;
+}
+
+#black-circle {
+    position: absolute;
+    background: black;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    right: -3rem;
+    bottom: -15rem;
+    z-index: 1;
+}
+
+#navcontents {
+    position: absolute;
+    list-style: none;
+    right: 5rem;
+    top: 43rem;
+    z-index: 2;
+}
+
+h2 {
+    color: white;
+    font-size: 4rem;
+    z-index: 2;
+}
+
+h2:hover {
+    text-shadow: 1px 1px 15px white;
+}
+
+li {
+    padding-bottom: -10rem;
+}
+
+#projects {
+    position: absolute;
+    list-style: decimal;
+    margin-left: 5rem;
+    margin-top: -2rem;
+}
+
+h3 {
+    color: black;
+    font-size: 3rem;
+    font-family: 'ITC Avant Garde Gothic Std Book';
+}
+
+span {
+    font-style: italic;
+}
