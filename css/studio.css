@@ -1,95 +1,196 @@
 @font-face {
-    font-family: 'ITC Avant Garde Gothic Std Book';
-    src: url('../assets/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdBk.woff') format('woff');
+    font-family: "Neutraface Bold";
+    src: url(../assets/fonts/neutraface/Neutraface2Text-Bold.woff2);
+}
+
+@font-face {
+    font-family: "Neutraface Demi";
+    src: url(../assets/fonts/neutraface/Neutraface2Text-Demi.woff2);
+}
+
+@font-face {
+    font-family: "Neutraface Demi Italic";
+    src: url(../assets/fonts/neutraface/Neutraface2Text-DemiItalic.woff2);
 }
 
 body {
     margin: 0 auto;
-    font-family: Fino, sans-serif;
 }
 
 a {
     text-decoration: none;
-}
-
-#lightpink-circle {
-    position: absolute;
-    background: #F1DADA;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 50%;
-    left: -3rem;
-    top: -15rem;
-    z-index: 1;
+    color: black;
 }
 
 h1 {
+    font-family: "Neutraface Bold", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-left: 3rem;
+}
+
+nav {
+    font-family: "Neutraface Demi", sans-serif;
+}
+
+#nav-container {
     position: relative;
-    color: black;
-    font-size: 6rem;
-    left: 3rem;
-    top: -2rem;
-    z-index: 2;
-}
-
-h1:hover {
-    text-shadow: 1px 1px 15px black;
-}
-
-h4 {
-    position: relative;
-    color: black;
-    font-size: 3rem;
-    left: 86rem;
-    top: -12rem;
-}
-
-#black-circle {
-    position: absolute;
-    background: black;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 50%;
-    right: -3rem;
-    bottom: -15rem;
-    z-index: 1;
-}
-
-#navcontents {
-    position: absolute;
-    list-style: none;
-    right: 5rem;
-    top: 43rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -1rem;
+    margin-left: 50rem;
     z-index: 2;
 }
 
 h2 {
-    color: white;
-    font-size: 4rem;
-    z-index: 2;
-}
-
-h2:hover {
-    text-shadow: 1px 1px 15px white;
-}
-
-li {
-    padding-bottom: -10rem;
-}
-
-#projects {
-    position: absolute;
-    list-style: decimal;
-    margin-left: 5rem;
-    margin-top: 3rem;
-}
-
-h3 {
-    color: black;
     font-size: 3rem;
-    font-family: 'ITC Avant Garde Gothic Std Book';
+    color: white;
+    line-height: 0rem;
+}
+
+#studio {
+    font-size: 3rem;
+    color: rgba(255, 79, 79, 0.5);
+    margin-top: -5rem;
+    animation: chosen-title 1s ease-out;
+}
+  
+@keyframes chosen-title {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+#lab {
+    margin-left: 4.5rem;
+    margin-right: 14.5rem;
+}
+
+#circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -18rem;
+    margin-left: 45rem;
+    z-index: 1;
+}
+
+#chosen-circle {
+    background: white;
+    border: 5px solid rgba(255, 79, 79, 0.5);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    animation: chosen-circle 1s ease-out;
+}
+  
+@keyframes chosen-circle {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+#blue-circle {
+    background: rgba(111, 116, 255, 0.5);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    margin-right: 5rem;
+    animation: blue-circle 1.5s ease-out;
+}
+
+#blue-circle:hover {
+    transform: translateY(6rem);
+    transition-duration: 0.5s;
+}
+  
+@keyframes blue-circle {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+#purple-circle {
+    background: rgba(195, 118, 255, 0.5);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    animation: purple-circle 2s ease-out;
+}
+
+#purple-circle:hover {
+    transform: translateY(6rem);
+    transition-duration: 0.5s;
+}
+  
+@keyframes purple-circle {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+main {
+    font-family: "Neutraface Demi", sans-serif;
+    position: relative;
+    top: 6rem;
+    left: 8rem;
+}
+
+#project-container li {
+    list-style: decimal;
+    font-size: 4rem;
+}
+
+h3 {    
+    font-size: 3rem;
 }
 
 span {
+    font-family: "Neutraface Demi Italic", sans-serif;
     font-style: italic;
 }
+
+img {
+    width: 25%;
+    position: absolute;
+}
+
+#one>#one-image {
+    display: none;
+}
+
+#one:hover>#one-image {
+    display: block;
+    right: 20rem;
+    top: -7rem;
+    border: 10px solid rgba(255, 79, 79, 0.5);
+}
+
+#two>#two-image {
+    display: none;
+}
+
+#two:hover>#two-image {
+    display: block;
+    right: 20rem;
+    top: 4rem;
+    border: 10px solid rgba(255, 79, 79, 0.5);
+}
+
+#three>#three-image {
+    display: none;
+}
+
+#three:hover>#three-image {
+    display: block;
+    right: 20rem;
+    top: 10rem;
+    border: 10px solid rgba(255, 79, 79, 0.5);
+}
+
+#four>#four-image {
+    display: none;
+}
+
+#four:hover>#four-image {
+    display: block;
+    right: 20rem;
+    top: 20rem;
+    border: 10px solid rgba(255, 79, 79, 0.5);
+}
+

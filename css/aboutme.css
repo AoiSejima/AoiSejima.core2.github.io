@@ -1,91 +1,152 @@
 @font-face {
-    font-family: 'ITC Avant Garde Gothic Std Book';
-    src: url('../assets/itc-avant-garde-gothic-std-cufonfonts-webfont/ITCAvantGardeStdBk.woff') format('woff');
+    font-family: "Neutraface Bold";
+    src: url(../assets/fonts/neutraface/Neutraface2Text-Bold.woff2);
+}
+
+@font-face {
+    font-family: "Neutraface Demi";
+    src: url(../assets/fonts/neutraface/Neutraface2Text-Demi.woff2);
+}
+
+@font-face {
+    font-family: "Neutraface Demi Italic";
+    src: url(../assets/fonts/neutraface/Neutraface2Text-DemiItalic.woff2);
 }
 
 body {
     margin: 0 auto;
-    font-family: Fino, sans-serif;
 }
 
 a {
     text-decoration: none;
-}
-
-#lightpink-circle {
-    position: absolute;
-    background: #F1DADA;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 50%;
-    left: -3rem;
-    top: -15rem;
-    z-index: 1;
+    color: black;
 }
 
 h1 {
+    font-family: "Neutraface Bold", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-left: 3rem;
+}
+
+nav {
+    font-family: "Neutraface Demi", sans-serif;
+}
+
+#nav-container {
     position: relative;
-    color: black;
-    font-size: 6rem;
-    left: 3rem;
-    top: -2rem;
-    z-index: 2;
-}
-
-h1:hover {
-    text-shadow: 1px 1px 15px black;
-}
-
-h4 {
-    position: relative;
-    color: black;
-    font-size: 3rem;
-    left: 86rem;
-    top: -12rem;
-}
-
-#black-circle {
-    position: absolute;
-    background: black;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 50%;
-    right: -3rem;
-    bottom: -15rem;
-    z-index: 1;
-}
-
-#navcontents {
-    position: absolute;
-    list-style: none;
-    right: 5rem;
-    top: 43rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -1rem;
+    margin-left: 50rem;
     z-index: 2;
 }
 
 h2 {
-    color: white;
-    font-size: 4rem;
-    z-index: 2;
-}
-
-h2:hover {
-    text-shadow: 1px 1px 15px white;
-}
-
-p {
-    color: black;
     font-size: 3rem;
-    font-family: 'ITC Avant Garde Gothic Std Book';
-    width: 50rem;
-    margin-left: 4rem;
-    margin-top: 10rem;
+    color: white;
+    line-height: 0rem;
 }
 
-h3 {
-    color: black;
-    font-size: 2rem;
-    font-family: 'ITC Avant Garde Gothic Std Book';
-    margin-left: 4rem;
-    margin-top: 10rem;
+#lab {
+    margin-left: 4.5rem;
+    margin-right: 14.5rem;
+}
+
+#about {
+    font-size: 3rem;
+    color: rgba(195, 118, 255, 0.5);
+    margin-top: -5rem;
+    animation: chosen-circle 2s ease-out;
+}
+  
+@keyframes chosen-title {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+#circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -18rem;
+    margin-left: 45rem;
+    z-index: 1;
+}
+
+#pink-circle {
+    background: rgba(255, 79, 79, 0.5);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    margin-right: 5rem;
+    animation: pink-circle 1s ease-out;
+}
+
+#pink-circle:hover {
+    transform: translateY(6rem);
+    transition-duration: 0.5s;
+}
+  
+@keyframes pink-circle {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+#blue-circle {
+    background: rgba(111, 116, 255, 0.5);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    margin-right: 5rem;
+    animation: blue-circle 1.5s ease-out;
+}
+
+#blue-circle:hover {
+    transform: translateY(6rem);
+    transition-duration: 0.5s;
+}
+  
+@keyframes blue-circle {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+#chosen-circle {
+    background: white;
+    border: 5px solid rgba(195, 118, 255, 0.5);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    animation: chosen-circle 2s ease-out;
+}
+  
+@keyframes chosen-circle {
+    0%   { transform: translateY(-30rem);}
+    100% { transform: translateY(0rem);}
+}
+
+main {
+    position: relative;
+    top: 6rem;
+    left: 8rem;
+}
+
+h3 {    
+    font-family: "Neutraface Bold", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+p {    
+    font-family: "Neutraface Demi", sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 70%;
+    margin-top: 7rem;
+}
+
+h4 {    
+    font-family: "Neutraface Demi Italic", sans-serif;
+    font-style: italic;
+    font-size: 3rem;
 }
